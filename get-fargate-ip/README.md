@@ -18,8 +18,7 @@ list the task and get the public IP
 ```
 $ fargate --region=us-west-2 service ps demosvc
 ID					IMAGE					STATUS	RUNNING	IP		CPU	MEMORY
-ae11e0ee-545e-4622-94e8-abe8f384ce96	pahud/fargate-samples:get-fargate-ip	running	1m43s	54.201.199.135	256	512
-$ curl 54.201.199.135 | jq
+55243941-4aae-48a2-9fb0-8859d43939dc	pahud/fargate-samples:get-fargate-ip	running	40s	34.214.28.194	256	512
 ```
 
 ![](images/01.png)
@@ -29,7 +28,7 @@ $ curl 54.201.199.135 | jq
 cURL the public IP to see the response
 
 ```
-$ curl -s 54.201.199.135 | jq
+$ curl -s 34.214.28.194 | jq
 ```
 
 
