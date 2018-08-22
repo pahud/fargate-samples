@@ -52,4 +52,4 @@ fargate --region=us-west-2 service destroy demosvc
 
 ## How it works?
 
-Read `fargate-samples/get-fargate-ip/run.sh` to see how it get all the info and bootstraps the `FARGATE_*` environment variables for nodeJS.
+Read `fargate-samples/get-fargate-ip/run.sh` to see how it gets all the info and bootstraps the `FARGATE_*` environment variables for nodeJS.
