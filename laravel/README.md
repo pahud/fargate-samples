@@ -68,3 +68,12 @@ or check the `phpinfo` page at **http://{LB_DNS_NAME}}/phpinfo.php**
 
 
 
+# Clean up
+
+```
+$ fargate --region us-west-2 service scale laravel-demo 0
+[i] Scaled service laravel-demo to 0
+$ fargate --region us-west-2 service destroy laravel-demo
+[i] Destroyed service laravel-demo
+```
+
