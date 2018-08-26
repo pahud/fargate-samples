@@ -1,6 +1,6 @@
 # laravel-demo
 
-This is a demo repository running PHP **LaravelDemo** project in **AWS Fargate**.  The Docker image is based on [hitalos/laravel](hitalos/laravel). Please note The web server running on HTTP port 80 is the built-in **artisan** server.
+This is a demo repository running PHP **LaravelDemo** project in **AWS Fargate**.  The Docker image is based on [hitalos/laravel](https://github.com/hitalos/laravel). Please note the web server running on HTTP port 80 is the built-in **artisan** server.
 
 
 
