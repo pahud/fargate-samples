@@ -30,5 +30,10 @@ The application will start and listen on localhost:8080
 
 open **http://localhost:8080/laravel/public/** to view the Laravel application
 
-If you run it on AWS Cloud9, you can just click the preview button and browse it from the built-in browser.
+If you run it on AWS Cloud9, you can configure the preview URL as `https://$C9_HOSTNAME/laravel/public/`
 
+![](./images/01.png)
+
+And click `open https://....` to preview the Laravel in the built-in browser in Cloud9
+
+![](./images/02.png)
