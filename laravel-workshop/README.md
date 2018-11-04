@@ -2,6 +2,11 @@
 
 This is a reference sample for Laravel application running with php7-apache and evencually deploy to AWS Fargate
 
+# Pre-requisities
+
+Prepare your docker environment in your laptop or just open an [AWS Cloud9 IDE](https://aws.amazon.com/tw/cloud9/). 
+
+
 # Build
 
 build the base image and the laravel image on top of it
@@ -28,9 +33,9 @@ The application will start and listen on localhost:8080
 
 # Validate
 
-open **http://localhost:8080/laravel/public/** to view the Laravel application
+open **http://localhost:8080/laravel/public/** from your laptop to view the Laravel application
 
-If you run it on AWS Cloud9, you can configure the preview URL as `https://$C9_HOSTNAME/laravel/public/`
+Alternatively, if you run it on AWS Cloud9, you can configure the preview URL as `https://$C9_HOSTNAME/laravel/public/`
 
 ![](./images/01.png)
 
