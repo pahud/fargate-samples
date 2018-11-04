@@ -2,9 +2,12 @@
 
 This is a demo repository running PHP **LaravelDemo** project in **AWS Fargate**.  The Docker image is based on [hitalos/laravel](https://github.com/hitalos/laravel). Please note the web server running on HTTP port 80 is the built-in **artisan** server.
 
+# Install fargate-cli
+
+Follow this [guide](https://github.com/pahud/fargate-samples/issues/1) to build the latest `fargate-cli` client
 
 
-# running laravelDemo on AWS Fargate with Fargate CLI
+# Running laravelDemo on AWS Fargate with Fargate CLI
 
 
 
