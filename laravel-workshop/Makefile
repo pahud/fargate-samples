@@ -6,5 +6,5 @@ build:
 
 run:
 	#http://localhost:8080/laravel/public/
-	docker inspect laravel-php7-apache > /dev/null && docker rm -f laravel-php7-apache
+	docker inspect laravel-php7-apache > /dev/null && docker rm -f laravel-php7-apache || exit 0
 	docker run -d --name laravel-php7-apache -p 8080:80 udn/laravel
