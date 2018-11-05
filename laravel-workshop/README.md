@@ -269,4 +269,4 @@ $ fargate --region ap-northeast-1 lb destroy laravel-lb
 
 # Contributors and Credits
 
-The content is originally contributed by **[Paul Pang](https://www.linkedin.com/in/paul-pang-0a446a137/)** and **Sam Hsieh** from **UDNgroup.com** in Oct 2018.
+The content is originally contributed by **[Paul Pang](https://www.linkedin.com/in/paul-pang-0a446a137/)** and **[Sam Hsieh](https://www.linkedin.com/in/sheng-lung-hsieh-875797a7/)** from **UDNgroup.com** in Oct 2018.
