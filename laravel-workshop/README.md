@@ -7,6 +7,15 @@ This is a reference sample for Laravel application running with php7-apache and 
 Prepare your docker environment in your laptop or just open an [AWS Cloud9 IDE](https://aws.amazon.com/tw/cloud9/). 
 
 
+# download the repository
+
+```
+$ curl -L https://github.com/pahud/fargate-samples/archive/master.zip -o fargate-samples.zip
+$ unzip fargate-samples.zip
+$ cd fargate-samples-master/laravel-workshop
+```
+
+
 # Build
 
 build the base image and the laravel image on top of it
