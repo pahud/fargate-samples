@@ -214,14 +214,26 @@ Events
 
 
 
+### Update the Health Check on Target Group
+
+ALB Target Group by default will health check `HTTP` on `/`, however, as we run laravel app at `/laravel/public/` we need to modify the health check point from `/` to `/laravel/public/`
+
+![](./images/04.png)
+
+
+
+And make sure the target is `healthy`
+
+![](./images/05.png)
+
+
+
 ### Validate
 
 Get the Load Balancer `DNS Name` from the `fargate service info` above and visit the DNS Name directly
 
-
-
 ```
-open http://$ELB_DNS_NAME/laravel/public/
+http://$YOUR_ELB_DNS_NAME/laravel/public/
 ```
 
 ![](./images/03.png)
