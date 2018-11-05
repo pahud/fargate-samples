@@ -1,3 +1,5 @@
+This content is originally designed for [AWS Hands-on Workshop - Laravel on AWS](https://aws.amazon.com/tw/events/aws-handson-workshop-31/) delivered on Nov 5th, 2018 in Taipei.
+
 # Laravel with php7-apache 
 
 This is a reference sample for Laravel application running with php7-apache and evencually deploy to AWS Fargate
