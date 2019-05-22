@@ -290,6 +290,20 @@ $ fargate --region ap-northeast-1 lb destroy laravel-lb
 
 
 
+## Replace Apache with Caddy
+
+For performance and simplicity concern, you may replace apache with [Caddy Server](https://caddyserver.com/) with php7 as the web engine of your base image . In `laravel/Dockerfile` simply comment `FROM udn/php` and uncomment `FROM caddy-php` and `make build` again to re-build the image.
+
+```
+#FROM udn/php
+# umcomment to build with caddy-php
+FROM caddy-php
+```
+
+![](./images/06.png)
+
+
+
 # Contributors and Credits
 
 The content is originally contributed by **[Paul Pang](https://www.linkedin.com/in/paul-pang-0a446a137/)** and **[Sam Hsieh](https://www.linkedin.com/in/sheng-lung-hsieh-875797a7/)** from **UDNgroup.com** in Oct 2018.
