@@ -9,3 +9,10 @@ $ aws ecs run-task --task-definition newFamily --cluster fargate --network-confi
 --launch-type "FARGATE"
 ```
 go to Amazon ECS console and check the task logs, in `mainContainer` log you should be able to see `foo=bar` in the log stream.
+
+# taskDef.yaml
+Optionally, you can convert the `taskDef.yaml` to JSON and pipe to `ecs register-task-definition` to register a new task definition like this:
+
+```bash
+docker run -v ${PWD}:/workdir mikefarah/yq yq r -j taskDef.yaml | xargs -0 aws ecs register-task-definition --family newFamily --cli-input-json
+```
