@@ -14,5 +14,7 @@ go to Amazon ECS console and check the task logs, in `mainContainer` log you sho
 Optionally, you can convert the `taskDef.yaml` to JSON and pipe to `ecs register-task-definition` to register a new task definition like this:
 
 ```bash
-docker run -v ${PWD}:/workdir mikefarah/yq yq r -j taskDef.yaml | xargs -0 aws ecs register-task-definition --family newFamily --cli-input-json
+docker run -v ${PWD}:/workdir mikefarah/yq yq r -j taskDef.yaml | xargs -0 aws ecs register-task-definition \
+--execution-role-arn arn:aws:iam::xxxxxxxxxxxx:role/ecsTaskExecutionRole \
+--family newFamily --cli-input-json
 ```
