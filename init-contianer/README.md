@@ -50,7 +50,6 @@ Example:
           "name": "DEMO_MYSQL_PASSWORD"
         }
       ]
-      ...
 ```
 
 Demo
