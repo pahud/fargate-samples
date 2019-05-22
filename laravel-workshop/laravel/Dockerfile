@@ -1,6 +1,6 @@
-#FROM udn/php
+FROM udn/php
 # umcomment to build with caddy-php
-FROM caddy-php
+#FROM caddy-php
 
 
 ADD laravel /var/www/html/laravel
