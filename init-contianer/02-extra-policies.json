@@ -1,0 +1,20 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "kms",
+            "Effect": "Allow",
+            "Action": "kms:Decrypt",
+            "Resource": "*"
+        },
+        {
+            "Sid": "ssm",
+            "Effect": "Allow",
+            "Action": [
+                "ssm:GetParametersByPath",
+                "ssm:GetParameters"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
