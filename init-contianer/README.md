@@ -84,3 +84,6 @@ DEMO_MYSQL_PASSWORD=pass1234
 ```
 please note `DEMO_MYSQL_HOSTNAME`, `DEMO_MYSQL_USERNAME` and `DEMO_MYSQL_PASSWORD` are fetched from SSM Parameter Store with KMS decrypton on-the-fly as 
 the ECS Task Execution Role(i.e. `ECSTaskRole4ParameterStore`).
+
+# Reference
+Amazon ECS Task Definition export/import [tips](https://gist.github.com/pahud/9affaa353f52e734a638b1329f7ca3d0)
