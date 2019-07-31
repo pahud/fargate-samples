@@ -1,0 +1,81 @@
+{
+  "networkMode": "awsvpc",
+  "family": "DemoDependency",
+  "placementConstraints": [],
+  "requiresCompatibilities": [
+    "FARGATE"
+  ],
+  "cpu": "256",
+  "executionRoleArn": "arn:aws:iam::903779448426:role/ecsTaskExecutionRole",
+  "volumes": [
+    {
+      "host": {},
+      "name": "secrets"
+    }
+  ],
+  "memory": "512",
+  "containerDefinitions": [
+    {
+      "environment": [],
+      "name": "initContainer",
+      "mountPoints": [
+        {
+          "sourceVolume": "secrets",
+          "containerPath": "/mnt/secrets"
+        }
+      ],
+      "image": "busybox:latest",
+      "logConfiguration": {
+        "logDriver": "awslogs",
+        "options": {
+          "awslogs-region": "ap-northeast-1",
+          "awslogs-stream-prefix": "ecs",
+          "awslogs-group": "/ecs/DemoDependency"
+        }
+      },
+      "cpu": 0,
+      "portMappings": [],
+      "command": [
+        "sh",
+        "-c",
+        "echo export foo=bar > /mnt/secrets/bootstrap.conf"
+      ],
+      "essential": false,
+      "volumesFrom": []
+    },
+    {
+      "environment": [],
+      "name": "mainConainer",
+      "mountPoints": [
+        {
+          "sourceVolume": "secrets",
+          "containerPath": "/mnt/secrets"
+        }
+      ],
+      "image": "busybox:latest",
+      "logConfiguration": {
+        "logDriver": "awslogs",
+        "options": {
+          "awslogs-region": "ap-northeast-1",
+          "awslogs-stream-prefix": "ecs",
+          "awslogs-group": "/ecs/DemoDependency"
+        }
+      },
+      "cpu": 0,
+      "portMappings": [],
+      "command": [
+        "sh",
+        "-c",
+        "source /mnt/secrets/bootstrap.conf; env"
+      ],
+      "dependsOn": [
+        {
+          "containerName": "initContainer",
+          "condition": "COMPLETE"
+        }
+      ],
+      "essential": true,
+      "volumesFrom": []
+    }
+  ]
+}
