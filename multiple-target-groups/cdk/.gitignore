@@ -1,0 +1,9 @@
+*.js
+*.out
+node_modules
+.backup
+package-lock.json
+
+# CDK asset staging directory
+.cdk.staging
+cdk.out
