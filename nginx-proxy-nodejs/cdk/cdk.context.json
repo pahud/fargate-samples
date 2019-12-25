@@ -1,0 +1,110 @@
+{
+  "@aws-cdk/core:enableStackNameDuplicates": "true",
+  "aws-cdk:enableDiffNoFail": "true",
+  "vpc-provider:account=903779448426:filter.isDefault=true:region=ap-northeast-1:returnAsymmetricSubnets=true": {
+    "vpcId": "vpc-497a492d",
+    "availabilityZones": [],
+    "subnetGroups": [
+      {
+        "name": "Private",
+        "type": "Private",
+        "subnets": [
+          {
+            "subnetId": "subnet-05b946a306d81274b",
+            "availabilityZone": "ap-northeast-1a",
+            "routeTableId": "rtb-0fe0143fca606cf0b"
+          },
+          {
+            "subnetId": "subnet-0ae2846156ce0118c",
+            "availabilityZone": "ap-northeast-1c",
+            "routeTableId": "rtb-0fe0143fca606cf0b"
+          },
+          {
+            "subnetId": "subnet-063ca7ed4aacdbad7",
+            "availabilityZone": "ap-northeast-1d",
+            "routeTableId": "rtb-0fe0143fca606cf0b"
+          }
+        ]
+      },
+      {
+        "name": "Public",
+        "type": "Public",
+        "subnets": [
+          {
+            "subnetId": "subnet-a7f831ee",
+            "availabilityZone": "ap-northeast-1a",
+            "routeTableId": "rtb-7dfa5f1a"
+          },
+          {
+            "subnetId": "subnet-1d040645",
+            "availabilityZone": "ap-northeast-1c",
+            "routeTableId": "rtb-7dfa5f1a"
+          },
+          {
+            "subnetId": "subnet-a68ad08e",
+            "availabilityZone": "ap-northeast-1d",
+            "routeTableId": "rtb-7dfa5f1a"
+          }
+        ]
+      }
+    ]
+  },
+  "vpc-provider:account=903779448426:filter.isDefault=true:region=us-west-2:returnAsymmetricSubnets=true": {
+    "vpcId": "vpc-a522d7dc",
+    "availabilityZones": [],
+    "subnetGroups": [
+      {
+        "name": "Private",
+        "type": "Private",
+        "subnets": [
+          {
+            "subnetId": "subnet-08b2d414ad87fb172",
+            "availabilityZone": "us-west-2a",
+            "routeTableId": "rtb-0c99af140fbbe3b17"
+          },
+          {
+            "subnetId": "subnet-0d0069776469b2e0d",
+            "availabilityZone": "us-west-2b",
+            "routeTableId": "rtb-0c99af140fbbe3b17"
+          },
+          {
+            "subnetId": "subnet-0e0a074fc211df2ac",
+            "availabilityZone": "us-west-2c",
+            "routeTableId": "rtb-0c99af140fbbe3b17"
+          },
+          {
+            "subnetId": "subnet-023a0778a5605ae13",
+            "availabilityZone": "us-west-2d",
+            "routeTableId": "rtb-0c99af140fbbe3b17"
+          }
+        ]
+      },
+      {
+        "name": "Public",
+        "type": "Public",
+        "subnets": [
+          {
+            "subnetId": "subnet-0c16aec6d2bece81d",
+            "availabilityZone": "us-west-2a",
+            "routeTableId": "rtb-48a79931"
+          },
+          {
+            "subnetId": "subnet-050929f8c6efb7657",
+            "availabilityZone": "us-west-2b",
+            "routeTableId": "rtb-48a79931"
+          },
+          {
+            "subnetId": "subnet-061c38942c5b3afa8",
+            "availabilityZone": "us-west-2c",
+            "routeTableId": "rtb-48a79931"
+          },
+          {
+            "subnetId": "subnet-05685883c2773c212",
+            "availabilityZone": "us-west-2d",
+            "routeTableId": "rtb-48a79931"
+          }
+        ]
+      }
+    ]
+  }
+}
