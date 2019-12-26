@@ -10,4 +10,4 @@ const env = {
   account: app.node.tryGetContext('account') || process.env.CDK_INTEG_ACCOUNT || process.env.CDK_DEFAULT_ACCOUNT
 };
 
-new CdkStack(app, 'CdkStack3', { env });
+new CdkStack(app, 'CdkStack4', { env });

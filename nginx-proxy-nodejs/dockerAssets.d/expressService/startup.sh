@@ -12,5 +12,7 @@ do
    PORT=$((3000+$i)) nohup supervisor --non-interactive server.js > /dev/stdout &
 done
 
+# PORT=3000 nohup supervisor --non-interactive server.js > /dev/stdout &
+
 # block the process in the forground
 tail -f $OUTFILE

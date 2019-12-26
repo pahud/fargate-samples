@@ -106,5 +106,83 @@
         ]
       }
     ]
+  },
+  "vpc-provider:account=903779448426:filter.tag:Name=myVPC:region=ap-northeast-1:returnAsymmetricSubnets=true": {
+    "vpcId": "vpc-e549a281",
+    "availabilityZones": [],
+    "subnetGroups": [
+      {
+        "name": "Private",
+        "type": "Private",
+        "subnets": [
+          {
+            "subnetId": "subnet-3c661b75",
+            "availabilityZone": "ap-northeast-1a",
+            "routeTableId": "rtb-9e882df9"
+          },
+          {
+            "subnetId": "subnet-05b643f57a6997deb",
+            "availabilityZone": "ap-northeast-1a",
+            "routeTableId": "rtb-5d2d8d39"
+          },
+          {
+            "subnetId": "subnet-aeeeeed8",
+            "availabilityZone": "ap-northeast-1a",
+            "routeTableId": "rtb-eecedb8a"
+          },
+          {
+            "subnetId": "subnet-849bdadc",
+            "availabilityZone": "ap-northeast-1c",
+            "routeTableId": "rtb-eecedb8a"
+          },
+          {
+            "subnetId": "subnet-09e79eb1dec82b7e2",
+            "availabilityZone": "ap-northeast-1c",
+            "routeTableId": "rtb-5d2d8d39"
+          },
+          {
+            "subnetId": "subnet-5b14bd00",
+            "availabilityZone": "ap-northeast-1c",
+            "routeTableId": "rtb-9e882df9"
+          },
+          {
+            "subnetId": "subnet-0e6b91003783207a1",
+            "availabilityZone": "ap-northeast-1d",
+            "routeTableId": "rtb-eecedb8a"
+          },
+          {
+            "subnetId": "subnet-0c365d97cbc75ceec",
+            "availabilityZone": "ap-northeast-1d",
+            "routeTableId": "rtb-5d2d8d39"
+          },
+          {
+            "subnetId": "subnet-0f0eff85a6b7b70da",
+            "availabilityZone": "ap-northeast-1d",
+            "routeTableId": "rtb-9e882df9"
+          }
+        ]
+      },
+      {
+        "name": "Public",
+        "type": "Public",
+        "subnets": [
+          {
+            "subnetId": "subnet-025bf274",
+            "availabilityZone": "ap-northeast-1a",
+            "routeTableId": "rtb-5d2d8d39"
+          },
+          {
+            "subnetId": "subnet-7034c928",
+            "availabilityZone": "ap-northeast-1c",
+            "routeTableId": "rtb-5d2d8d39"
+          },
+          {
+            "subnetId": "subnet-8a3e0aa2",
+            "availabilityZone": "ap-northeast-1d",
+            "routeTableId": "rtb-5d2d8d39"
+          }
+        ]
+      }
+    ]
   }
 }

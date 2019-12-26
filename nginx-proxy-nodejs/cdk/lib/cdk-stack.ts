@@ -43,6 +43,10 @@ export class CdkStack extends cdk.Stack {
         })
      })
 
+    //  express.addPortMappings({
+    //    containerPort: 3000
+    //  })
+
 
      const svc = new ecsPatterns.ApplicationLoadBalancedFargateService(this, 'Svc', {
        taskDefinition: taskDef,
