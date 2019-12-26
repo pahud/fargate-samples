@@ -47,3 +47,29 @@ done | sort -nr | uniq -c
 # the requests are pretty much spread across all available 4 CPU vCores
 ```
 
+
+
+# Benchmarks
+
+Benchmarks on **EC2 m5.xlarge** instance
+
+![](images/ec2-m5xl-banchmark.png)
+
+
+
+Benchmarks on **AWS Fargate** Task(4 vCore 8GB memory)
+
+![](images/fargate-bench-4vcore-8gmem.png)
+
+| Requests/sec | Type                                                         | Rank |
+| ------------ | ------------------------------------------------------------ | ---- |
+| 8,595        | EC2(m5.xlarge) with direct single Express visit              | 4    |
+| 15,139       | EC2(m5.xlarge) with Nginx and 4 Express instances            | 2    |
+| 14,821       | Fargate(4 vCore 8GB) for Nginx and 4 Express instances + ALB | 3    |
+| **16,028**   | Fargate(4 vCore 8GB) for Nginx and 4 Express instances. No ALB. Direct Fargate ENI visit. | 1    |
+
+
+
+# Conclusion
+
+AWS Fargate task(4 vCore 8GB) running Nginx with 4 Express instances *without* ALB gains the best performance, even slightly better than running on m5.xlarge EC2 instance. However, for scalibility and high availability consideration,  Fargate with ALB would still be the best choice.
