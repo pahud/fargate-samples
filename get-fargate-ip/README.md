@@ -69,4 +69,4 @@ $ cdk destroy
 
 ## How it works?
 
-Read `fargate-samples/get-fargate-ip/dockerAssets.d/run.sh` to see how it gets all the info and bootstraps the `FARGATE_*` environment variables for nodeJS.
+Read [get-fargate-ip/dockerAssets.d/run.sh](./dockerAssets.d/run.sh) to see how it gets all the info and bootstraps the `FARGATE_*` environment variables for nodeJS.
