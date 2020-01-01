@@ -4,6 +4,8 @@ In many cases, you may build serverless scheduled tasks with AWS Fargate to exec
 
 This sample demonstrates how we build the two scenarios in AWS CDK.
 
+![](images/scheduled-fargate-tasks.png)
+
 ## Run Scheduled Fargate Tasks with CloudWatch Events or EventBridge
 
 See [CloudWatchScheduledEventsFargateTask](https://github.com/pahud/fargate-samples/blob/81252ec4e66722e1caa4b7a0bac11c5caabd456c/scheduled-fargate-tasks/cdk/lib/cdk-stack.ts#L12-L61) class.
