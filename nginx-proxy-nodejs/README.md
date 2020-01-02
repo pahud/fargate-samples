@@ -44,7 +44,7 @@ done | sort -nr | uniq -c
   24 Pid 47
   26 Pid 41
   25 Pid 40
-# the requests are pretty much spread across all available 4 CPU vCores
+# the requests are pretty much spread across 4 processes.
 ```
 
 
