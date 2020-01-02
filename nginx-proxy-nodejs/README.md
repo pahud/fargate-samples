@@ -8,7 +8,7 @@ This sample refarch builds a nginx-proxied express application running on AWS Fa
 
 ## Why running multiple express instances
 
-**AWS Fargate** is a serverless compute platform which gives you multiple options of different task size ranges from 2 vCore to 4 vCore of CPU and 256MB to 8GB of memory. As NodeJS is designed to execute as single threaded, we need to leverage other modules or applications to spawn multiple NodeJS processes that utilizes all available CPU vCores in AWS Fargate task. In many cases, the cluster module, forever or PM2 might be a very common practice, while in others, we may prefer nginx as the reverse proxy to balance the traffic across 2 or 4 express instances.
+**AWS Fargate** is a serverless compute platform which gives you multiple options of different task size ranges from 2 vCore to 4 vCore of CPU and 256MB to 8GB of memory. As NodeJS is designed to execute as single threaded, we need to leverage other modules or applications to spawn multiple NodeJS processes that utilizes all available CPU vCores in AWS Fargate task. In many cases, the cluster module, forever or PM2 might be a very common practice, while in others, we may prefer nginx as the reverse proxy to balance the traffic across 2 or 4 express instances without touching any node source codes..
 
 #### Benefits using Nginx over PM2 or cluster
 
